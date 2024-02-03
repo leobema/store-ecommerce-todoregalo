@@ -1,5 +1,5 @@
-import { CommonModule, NgIf } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterLinkWithHref } from '@angular/router';
 import { HeaderComponent } from './../../shared/header/header.component'
 import { TitleComponent } from '../../shared/sections/home/title/title.component';

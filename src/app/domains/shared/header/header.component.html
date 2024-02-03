@@ -1,4 +1,4 @@
-<div class="relative inset-x-0 top-0 z-50">
+<div class="relative inset-x-0 top-0 z-10">
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
@@ -31,7 +31,7 @@
             </button>
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <a routerLink="" class="flex flex-shrink-0 items-center">
+            <a routerLink="/" class="flex flex-shrink-0 items-center">
                 <img class="h-8 w-auto" src="./../../../../assets/images/todoregalo-logo.png" alt="todo regalo">
             </a>
             <div class="hidden sm:ml-6 sm:block">
@@ -48,11 +48,24 @@
             </div>
             </div>
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <button 
+                (click)="toggleSideMenu()"
+                type="button" 
+                class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <span class="absolute -inset-1.5"></span>
+                    <span class="sr-only">Ver Carrito</span>
+                    <div class="absolute -top-2 -left-3 rounded h-5 w-5 bg-black text-white text-sm">
+                        {{cart().length}}
+                    </div>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z" />
+                    </svg>
+                </button>
                 <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">View notifications</span>
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M1 20v-2.946c1.993-.656 2.575-2.158 3.668-6.077.897-3.218 1.891-6.784 4.873-8.023-.027-.147-.041-.299-.041-.454 0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .156-.014.309-.042.458 2.987 1.244 3.984 4.813 4.884 8.033 1.103 3.95 1.697 5.423 3.658 6.062v2.947h-7c0 2.208-1.792 4-4 4s-4-1.792-4-4h-7zm14 0h-6c0 1.656 1.344 3 3 3s3-1.344 3-3zm-13-1h20v-1.241c-2.062-.918-2.82-3.633-3.621-6.498-1.066-3.814-2.167-7.758-6.379-7.761-4.21 0-5.308 3.937-6.369 7.745-.8 2.872-1.559 5.593-3.631 6.514v1.241zm11.492-16.345l.008-.155c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5l.008.152c.455-.099.949-.152 1.487-.152.542 0 1.039.054 1.497.155z" />
                     </svg>
                 </button>
         
@@ -111,13 +124,13 @@
             <!-- Example button actived
             <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Tienda</a>
             -->
-            <a routerLink="/tienda"  class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Tienda2</a>
-            <a routerLink="/categorias" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Categorías</a>
-            <a routerLink="/motivos" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Motivos</a>
-            <a routerLink="/hombre" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Hombre</a>
-            <a routerLink="/mujer" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Mujer</a>
-            <a routerLink="/nino" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Niño</a>
-            <a routerLink="/recien-nacido" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Recién nacido</a>
+            <a routerLink="/tienda" routerLinkActive="bg-gray-900 text-white rounded-md px-3 py-2" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Tienda2</a>
+            <a routerLink="/categorias" routerLinkActive="bg-gray-900 text-white rounded-md px-3 py-2" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Categorías</a>
+            <a routerLink="/motivos" routerLinkActive="bg-gray-900 text-white rounded-md px-3 py-2" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Motivos</a>
+            <a routerLink="/hombre" routerLinkActive="bg-gray-900 text-white rounded-md px-3 py-2" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Hombre</a>
+            <a routerLink="/mujer" routerLinkActive="bg-gray-900 text-white rounded-md px-3 py-2" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Mujer</a>
+            <a routerLink="/nino" routerLinkActive="bg-gray-900 text-white rounded-md px-3 py-2" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Niño</a>
+            <a routerLink="/recien-nacido" routerLinkActive="bg-gray-900 text-white rounded-md px-3 py-2" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Recién nacido</a>
         </div>
         </div>
     </nav>
@@ -153,4 +166,44 @@
             </div>
         </div>
     </div>
+</div>
+
+<div
+    class="fixed border-l-4 top-0 right-0 bg-red z-40 w-72 h-screen p-4 overflow-y-auto transition-transform bg-white"
+    [class.translate-x-full]="highSideMenu()"
+  >
+  <div class="flex justify-between items-center p-2">
+    <p class="text-xl">My Cart</p>
+    <button
+    (click)="toggleSideMenu()"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+    
+  </div>
+  <div>
+    <div *ngFor="let product of cart()">
+        <div class="flex space-x2 items-center">
+            <img class="w-6 h-6" [src]="product.image" [alt]="product.title" >
+            <h3>{{product.title}}</h3>
+        </div>
+        <p>{{product.price}}</p>
+    </div>
+    <div>
+        Total: {{total()}}
+    </div>
+</div>
 </div>

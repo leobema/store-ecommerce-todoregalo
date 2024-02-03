@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal, Input, SimpleChange, inject } from '@angular/core';
 import { RouterLinkActive, RouterLinkWithHref } from '@angular/router';
+import { Product } from './../../shared/models/product.model'
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -11,43 +13,15 @@ import { RouterLinkActive, RouterLinkWithHref } from '@angular/router';
 })
 export class HeaderComponent {
   toggleMenu = false
+  highSideMenu = signal(true);
+  private cartService = inject(CartService)
+  cart = this.cartService.cart;
+  total = this.cartService.total;
   
-
+    toggleSideMenu(){
+      this.highSideMenu.update(prevState => !prevState);
+    }
   
-    
-
-/*
-implements OnInit {
-  ngOnInit() {
-    document.addEventListener('click', this.closeMenu)
-  }
-
-  openMenu() {
-    const menu = document.getElementById("menu-user");
-    if (!menu) {
-      return;
-    }
-
-    menu.classList.remove('hidden');
-  }
-
-  closeMenu(e: any) {
-    const menuContainer = document.getElementById("menu-user-container");
-    const menu = document.getElementById("menu-user");
-    
-    if (!menuContainer) {
-      return;
-    }
-
-    if (!menu) {
-      return;
-    }
-
-    if (!menuContainer.contains(e.target)) {
-      menu.classList.add('hidden');
-    }
-  }
-  */
 }
 
 

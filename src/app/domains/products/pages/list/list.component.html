@@ -1,1 +1,9 @@
-<p>list works!</p>
+<section>
+    <div class="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <app-product 
+        *ngFor="let product of products()"
+        [product]="product" 
+        (addToCart)="addToCart($event)" 
+        />
+    </div>
+</section>
