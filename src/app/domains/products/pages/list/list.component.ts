@@ -26,6 +26,7 @@ export class ListComponent {
   addToCart(product: Product) {
    // console.log('escuchando al hijo')
     this.cartService.addToCart(product)
-  }
+  };
+  
 
 }

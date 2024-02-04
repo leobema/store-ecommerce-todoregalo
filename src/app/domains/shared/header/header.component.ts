@@ -17,9 +17,14 @@ export class HeaderComponent {
   private cartService = inject(CartService)
   cart = this.cartService.cart;
   total = this.cartService.total;
+
   
     toggleSideMenu(){
       this.highSideMenu.update(prevState => !prevState);
+    };
+
+    clearToCart() {
+      this.cartService.clearCart();
     }
   
 }
