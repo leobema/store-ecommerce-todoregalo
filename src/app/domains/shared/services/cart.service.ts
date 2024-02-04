@@ -16,6 +16,7 @@ export class CartService {
 
   addToCart(product: Product) {
     this.cart.update(state => [...state, product]);
-  }
+  };
+
 
 }
