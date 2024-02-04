@@ -27,6 +27,13 @@ export class ProductService {
       price: 300,
       image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg',
       creationAt: new Date().toISOString()
+    },
+    {
+      id: 4,
+      title: 'Prod 4',
+      price: 400,
+      image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
+      creationAt: new Date().toISOString()
     }
   ];
 
