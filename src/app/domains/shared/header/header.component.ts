@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal, Input, SimpleChange, inject } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
 import { RouterLinkActive, RouterLinkWithHref } from '@angular/router';
-import { Product } from './../../shared/models/product.model'
 import { CartService } from '../services/cart.service';
 
 @Component({

@@ -3,6 +3,7 @@ import { ProductComponent } from '../product/product.component';
 import { Product } from './../../../shared/models/product.model';
 import { CommonModule } from '@angular/common';
 import { CartService } from './../../../shared/services/cart.service';
+import { ProductService } from '../../../shared/services/product.service';
 
 
 @Component({
@@ -13,36 +14,15 @@ import { CartService } from './../../../shared/services/cart.service';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
-  products = signal<Product[]>([]);
-  private cartService = inject(CartService)
+  //product = signal<Product[]>([]);
+  productdb: Product[] = [];
+  private cartService = inject(CartService);
+  private productService = inject(ProductService);
 
   constructor(){
-    const initProducts: Product[] = [
-      {
-        id: Date.now(),
-        title: 'Prod 1',
-        price: 100,
-        image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg',
-        creationAt: new Date().toISOString()
-      },
-      {
-        id: Date.now(),
-        title: 'Prod 2',
-        price: 200,
-        image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg',
-        creationAt: new Date().toISOString()
-      },
-      {
-        id: Date.now(),
-        title: 'Prod 3',
-        price: 300,
-        image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg',
-        creationAt: new Date().toISOString()
-      }
-    ];
-    this.products.set(initProducts)
+    this.productdb = this.productService.getAllProducts();
+  
   }
-
   addToCart(product: Product) {
    // console.log('escuchando al hijo')
     this.cartService.addToCart(product)
