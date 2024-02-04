@@ -12,6 +12,7 @@ import { CartService } from '../services/cart.service';
 })
 export class HeaderComponent {
   toggleMenu = false
+  toggleMenu2 = false
   highSideMenu = signal(true);
   private cartService = inject(CartService)
   cart = this.cartService.cart;
