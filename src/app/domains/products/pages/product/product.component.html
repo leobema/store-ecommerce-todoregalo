@@ -30,7 +30,10 @@
                 </div>
                 <div class="flex items-center justify-between">
                     <span class="text-2xl font-bold text-gray-900 dark:text-white">{{product.price | currency:'$':'symbol':'1.0'}}</span>
-                    <button (click)="addToCartHandler()" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Añadir a cesta</button>
+                    <button 
+                    (click)="addToCartHandler()" class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+                    Añadir a carrito
+                    </button>
                 </div>
                 <p class="text-sm text-gray-500 dark:text-white">{{product.creationAt | date:'short'}}</p>
             </div>
