@@ -43,8 +43,12 @@ export class ProductService {
     return this.productdb;
   }
 
-   getProductsById(id: number): Product | undefined {
-    return this.productdb.find(product => product.id === id);
+   getProductById(id: number) : Product | undefined {
+    return this.productdb.find(product => id === product.id); 
   } 
-
+  /*
+  getProductsById(id: string) {
+    return this.productdb.find(product => product.id);
+  } 
+  */
 }

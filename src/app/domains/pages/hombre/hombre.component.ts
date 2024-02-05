@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../shared/header/header.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-hombre',
   standalone: true,
-  imports: [HeaderComponent, CommonModule],
+  imports: [CommonModule],
   templateUrl: './hombre.component.html',
   styleUrl: './hombre.component.css'
 })

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
   selector: 'app-nino',
   standalone: true,
-  imports: [HeaderComponent],
+  imports: [],
   templateUrl: './nino.component.html',
   styleUrl: './nino.component.css'
 })

@@ -25,8 +25,13 @@ export class HeaderComponent {
 
     clearToCart() {
       this.cartService.clearCart();
+    };
+
+    removeItemCart(index: number) {
+      this.cartService.removeItemCart(index)
     }
-  
+
+    
 }
 
 
