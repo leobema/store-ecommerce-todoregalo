@@ -44,8 +44,18 @@ export class ProductDetailComponent {
     }
   }
 
-  changeHandler(cant: String) {
+  /* changeHandler(cant: String) {
     this.cant.update(_ => +cant)
+  } */
+
+  changeHandler(cant: String)  {
+      this.cant.update(_ => +cant)
+      const currentValue = +cant
+      if (currentValue) {
+      (currentValue <= 4)
+      currentValue;
+    }
+        else this.product?.cant
   }
 
   getCategory(id: number | undefined) {

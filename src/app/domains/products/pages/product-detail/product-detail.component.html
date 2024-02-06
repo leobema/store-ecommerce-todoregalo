@@ -31,6 +31,7 @@
       <p class="title-font font-medium text-2xl text-gray-900 mt-5">{{product?.price | currency:'$':'symbol':'1.0'}}</p>
       <div class="mx-auto justify-center">
         <input
+          onkeydown="return false"
           #inputCant
           class="border w-10" 
           type="number" 
