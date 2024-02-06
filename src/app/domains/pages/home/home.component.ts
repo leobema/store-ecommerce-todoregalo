@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, effect } from '@angular/core';
 import { RouterLinkWithHref } from '@angular/router';
 import { TitleComponent } from '../../shared/sections/home/title/title.component';
 import { FeaturedProductsComponent } from '../../shared/sections/home/featured-products/featured-products.component';
@@ -16,7 +16,7 @@ import { PaymentComponent } from '../../info/payment/payment.component';
 })
 export class HomeComponent {
 
- 
+    
   
 
   }

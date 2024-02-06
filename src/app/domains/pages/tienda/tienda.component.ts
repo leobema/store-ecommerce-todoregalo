@@ -19,6 +19,7 @@ export class TiendaComponent {
   private cartService: CartService = inject(CartService);
   products: Product[] = [];
 
+  
 
   ngOnInit () {
     this.getAllProducts();

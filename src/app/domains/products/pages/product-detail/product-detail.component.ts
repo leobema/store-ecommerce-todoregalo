@@ -1,4 +1,4 @@
-import { Component, Input, inject, signal } from '@angular/core';
+import { Component, Input, inject, signal, effect } from '@angular/core';
 import { HeaderComponent } from '../../../shared/header/header.component';
 import { ProductService } from '../../../shared/services/product.service';
 import { CategoryService } from '../../../shared/services/category.service';
@@ -24,6 +24,10 @@ export class ProductDetailComponent {
   private cartService = inject(CartService)
   cant = signal<number>(1);
 
+  constructor() {
+   
+  }
+
   ngOnInit() {
     if (this.id) {
       this.product = this.productService.getProductById(+this.id);
@@ -33,6 +37,8 @@ export class ProductDetailComponent {
       }
     }
   }
+
+  
 
   changeCover(newImg: string) {
     this.cover.set(newImg);
@@ -63,5 +69,8 @@ export class ProductDetailComponent {
       return null
     }
     return this.categoryService.get(id)
-  }
+  } 
 }
+
+
+
