@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ProductComponent } from '../product/product.component';
 import { Product } from './../../../shared/models/product.model';
-import { CommonModule } from '@angular/common';
+
 import { CartService } from './../../../shared/services/cart.service';
 import { ProductService } from '../../../shared/services/product.service';
 import { CategoryService } from '../../../shared/services/category.service';
@@ -14,7 +14,7 @@ import { ListCategoriesComponent } from './../../../products/pages/list-categori
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [ProductComponent, CommonModule, RouterLinkWithHref, ListCategoriesComponent],
+  imports: [ProductComponent, RouterLinkWithHref, ListCategoriesComponent],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-motivos',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './motivos.component.html',
   styleUrl: './motivos.component.css'
 })

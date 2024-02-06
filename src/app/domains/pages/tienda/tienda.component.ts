@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { ListComponent } from '../../products/pages/list/list.component';
 import { ProductService } from './../../shared/services/product.service'
@@ -9,7 +9,7 @@ import { CartService } from '../../shared/services/cart.service';
 @Component({
   selector: 'app-store',
   standalone: true,
-  imports: [CommonModule, ListComponent],
+  imports: [ListComponent],
   templateUrl: './tienda.component.html',
   styleUrl: './tienda.component.css'
 })

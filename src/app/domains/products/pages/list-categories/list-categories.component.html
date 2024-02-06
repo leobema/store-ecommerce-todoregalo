@@ -1,14 +1,15 @@
 
 <div class="w-100 p-10">
-        <h3 class="font-semibold text-xl">Categorías</h3>
-        <hr />
-        <ul>
-            <li>
-                <a routerLink="/tienda">All</a>
-            </li>
-            <li *ngFor="let category of categorydb">
-                <a routerLink="/tienda" [queryParams]="{category_id: category.id}">{{category.name}}</a>
-
-            </li>
-        </ul>
+  <h3 class="font-semibold text-xl">Categorías</h3>
+  <hr />
+  <ul>
+    <li>
+      <a routerLink="/tienda">All</a>
+    </li>
+    @for (category of categorydb; track category) {
+      <li>
+        <a routerLink="/tienda" [queryParams]="{category_id: category.id}">{{category.name}}</a>
+      </li>
+    }
+  </ul>
 </div>

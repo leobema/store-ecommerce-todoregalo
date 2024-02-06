@@ -19,35 +19,35 @@ export const routes: Routes = [
         children: [
             {
                 path: '',
-                component: HomeComponent
+                loadComponent: () => import('./domains/pages/home/home.component').then(m=> m.HomeComponent) 
             },
             {
                 path: 'tienda',
-                component: TiendaComponent
+                loadComponent: () => import('./domains/pages/tienda/tienda.component').then(m=> m.TiendaComponent) 
             },
             {
                 path: 'categorias',
-                component: CategoriasComponent
+                loadComponent: () => import('./domains/pages/categorias/categorias.component').then(m=> m.CategoriasComponent)
             },
             {
                 path: 'motivos',
-                component: MotivosComponent
+                loadComponent: () => import('./domains/pages/motivos/motivos.component').then(m=> m.MotivosComponent) 
             },
             {
                 path: 'hombre',
-                component: HombreComponent
+                loadComponent: () => import('./domains/pages/hombre/hombre.component').then(m=> m.HombreComponent) 
             },
             {
                 path: 'mujer',
-                component: MujerComponent
+                loadComponent: () => import('./domains/pages/mujer/mujer.component').then(m=> m.MujerComponent) 
             },
             {
                 path: 'nino',
-                component: NinoComponent
+                loadComponent: () => import('./domains/pages/nino/nino.component').then(m=> m.NinoComponent) 
             },
             {
                 path: 'recien-nacido',
-                component: RecienNacidoComponent
+                loadComponent: () => import('./domains/pages/recien-nacido/recien-nacido.component').then(m=> m.RecienNacidoComponent) 
             },
             {
                 path: 'product/:id',

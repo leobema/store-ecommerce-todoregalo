@@ -1,242 +1,243 @@
 <div class="relative inset-x-0 top-0 z-10">
-    <nav class="bg-gray-800">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
-            <!-- Mobile menu button-->
-            <button 
-                (click)="toggleMenu2 = !toggleMenu2"
-                type="button" 
-                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
-                aria-controls="mobile-menu" 
-                aria-expanded="false"
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
+          <!-- Mobile menu button-->
+          <button
+            (click)="toggleMenu2 = !toggleMenu2"
+            type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
             >
-                <span class="absolute -inset-0.5"></span>
-                <span class="sr-only">Open main menu</span>
-                <!--
-                Icon when menu is closed.
-    
-                Menu open: "hidden", Menu closed: "block"
-                -->
-                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <!--
-                Icon when menu is open.
-    
-                Menu open: "block", Menu closed: "hidden"
-                -->
-                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
-            </div>
-            <div class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
-            <a routerLink="/" class="flex flex-shrink-0 items-center">
-                <img class="h-8 w-auto" src="./../../../../assets/images/todoregalo-logo.png" alt="todo regalo">
-            </a>
-            <div class="hidden xs:hidden sm:hidden md:hidden sm:ml-6 lg:block" >
-                <div class="flex space-x-4" >
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a 
-                        routerLink="/tienda" 
-                        routerLinkActive=" bg-gray-900 text-white rounded-md" 
-                        [routerLinkActiveOptions]="{exact: true}"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-base font-medium">
-                        Tienda
-                    </a>
-                    <a 
-                        routerLink="/categorias" 
-                        routerLinkActive="bg-gray-900 text-white rounded-md" 
-                        [routerLinkActiveOptions]="{exact: true}"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
-                        Categorías
-                    </a>
-                    <a 
-                        routerLink="/motivos" 
-                        routerLinkActive="bg-gray-900 text-white rounded-md" 
-                        [routerLinkActiveOptions]="{exact: true}"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
-                        Motivos
-                    </a>
-                    <a 
-                        routerLink="/hombre" 
-                        routerLinkActive="bg-gray-900 text-white rounded-md" 
-                        [routerLinkActiveOptions]="{exact: true}"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
-                        Hombre
-                    </a>
-                    <a 
-                        routerLink="/mujer" 
-                        routerLinkActive="bg-gray-900 text-white rounded-md" 
-                        [routerLinkActiveOptions]="{exact: true}"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
-                        Mujer
-                    </a>
-                    <a 
-                        routerLink="/nino" 
-                        routerLinkActive="bg-gray-900 text-white rounded-md" 
-                        [routerLinkActiveOptions]="{exact: true}"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
-                        Niño
-                    </a>
-                    <a 
-                        routerLink="/recien-nacido" 
-                        routerLinkActive="bg-gray-900 text-white rounded-md" 
-                        [routerLinkActiveOptions]="{exact: true}"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
-                        Recién nacido
-                    </a>
-                </div>
-            </div>
-            </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div class="mx-auto">
-                        <button 
-                            (click)="toggleSideMenu()"
-                            type="button" 
-                            class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                            >
-                                <span class="absolute -inset-1.5"></span>
-                                <span class="sr-only">Ver Carrito</span>
-                            <div 
-                            *ngIf='cart().length > 0' 
-                            class="absolute -top-2 -left-3 rounded h-5 w-5 bg-green-600 text-white font-semibold text-sm">
-                                {{cartCount()}}
-                            </div>
-                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z" />
-                                </svg>
-                        </button>
-                        <button type="button" class="hidden relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                                    <span class="absolute -inset-1.5"></span>
-                                    <span class="sr-only">View notifications</span>
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M1 20v-2.946c1.993-.656 2.575-2.158 3.668-6.077.897-3.218 1.891-6.784 4.873-8.023-.027-.147-.041-.299-.041-.454 0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .156-.014.309-.042.458 2.987 1.244 3.984 4.813 4.884 8.033 1.103 3.95 1.697 5.423 3.658 6.062v2.947h-7c0 2.208-1.792 4-4 4s-4-1.792-4-4h-7zm14 0h-6c0 1.656 1.344 3 3 3s3-1.344 3-3zm-13-1h20v-1.241c-2.062-.918-2.82-3.633-3.621-6.498-1.066-3.814-2.167-7.758-6.379-7.761-4.21 0-5.308 3.937-6.369 7.745-.8 2.872-1.559 5.593-3.631 6.514v1.241zm11.492-16.345l.008-.155c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5l.008.152c.455-.099.949-.152 1.487-.152.542 0 1.039.054 1.497.155z" />
-                                    </svg>
-                        </button>
-                </div>
-        
-                <!-- Profile dropdown -->
-                <div class=" hidden relative ml-3" id="menu-user-container">
-                    <div>
-                        <button 
-                            type="button" 
-                            class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" 
-                            id="user-menu-button" 
-                            aria-expanded="false" 
-                            aria-haspopup="true"
-                            (click)="toggleMenu = !toggleMenu"
-                        >
-                            <span class="absolute -inset-1.5"></span>
-                            <span class="sr-only">Open user menu</span>
-                            <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                        </button>
-                    </div>
-        
-                    <!--
-                    Dropdown menu, show/hide based on menu state.
-        
-                    Entering: "transition ease-out duration-100"
-                        From: "transform opacity-0 scale-95"
-                        To: "transform opacity-100 scale-100"
-                    Leaving: "transition ease-in duration-75"
-                        From: "transform opacity-100 scale-100"
-                        To: "transform opacity-0 scale-95"
-                    -->
-                    @if (toggleMenu === true) {
-                    <div
-                        
-                        id="menu-user"
-                        class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" 
-                        role="menu" 
-                        aria-orientation="vertical" 
-                        aria-labelledby="user-menu-button" 
-                        tabindex="-1"
-                    >
-                        <!-- Active: "bg-gray-100", Not Active: "" -->
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile1s</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
-                    </div>
-                    }
-                </div>
-            </div>
-        </div>
-        </div>
-    
-        <!-- Aqui cambiar Mobile menu, show/hide based on menu state. -->
-        @if (toggleMenu2 === true) {
-        <div class="lg:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <!-- Example button actived
-            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Tienda</a>
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
             -->
-            <a 
-            routerLink="/tienda" 
-            routerLinkActive="bg-gray-900 text-white rounded-md" 
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start">
+          <a routerLink="/" class="flex flex-shrink-0 items-center">
+            <img class="h-8 w-auto" src="./../../../../assets/images/todoregalo-logo.png" alt="todo regalo">
+          </a>
+          <div class="hidden xs:hidden sm:hidden md:hidden sm:ml-6 lg:block" >
+            <div class="flex space-x-4" >
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a
+                routerLink="/tienda"
+                routerLinkActive=" bg-gray-900 text-white rounded-md"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-2 py-1 text-base font-medium">
+                Tienda
+              </a>
+              <a
+                routerLink="/categorias"
+                routerLinkActive="bg-gray-900 text-white rounded-md"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
+                Categorías
+              </a>
+              <a
+                routerLink="/motivos"
+                routerLinkActive="bg-gray-900 text-white rounded-md"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
+                Motivos
+              </a>
+              <a
+                routerLink="/hombre"
+                routerLinkActive="bg-gray-900 text-white rounded-md"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
+                Hombre
+              </a>
+              <a
+                routerLink="/mujer"
+                routerLinkActive="bg-gray-900 text-white rounded-md"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
+                Mujer
+              </a>
+              <a
+                routerLink="/nino"
+                routerLinkActive="bg-gray-900 text-white rounded-md"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
+                Niño
+              </a>
+              <a
+                routerLink="/recien-nacido"
+                routerLinkActive="bg-gray-900 text-white rounded-md"
+                [routerLinkActiveOptions]="{exact: true}"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-2 py-1 text-base font-medium">
+                Recién nacido
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div class="mx-auto">
+            <button
+              (click)="toggleSideMenu()"
+              type="button"
+              class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              >
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Ver Carrito</span>
+              @if (cart().length > 0) {
+                <div
+                  class="absolute -top-2 -left-3 rounded h-5 w-5 bg-green-600 text-white font-semibold text-sm">
+                  {{cartCount()}}
+                </div>
+              }
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z" />
+              </svg>
+            </button>
+            <button type="button" class="hidden relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M1 20v-2.946c1.993-.656 2.575-2.158 3.668-6.077.897-3.218 1.891-6.784 4.873-8.023-.027-.147-.041-.299-.041-.454 0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5c0 .156-.014.309-.042.458 2.987 1.244 3.984 4.813 4.884 8.033 1.103 3.95 1.697 5.423 3.658 6.062v2.947h-7c0 2.208-1.792 4-4 4s-4-1.792-4-4h-7zm14 0h-6c0 1.656 1.344 3 3 3s3-1.344 3-3zm-13-1h20v-1.241c-2.062-.918-2.82-3.633-3.621-6.498-1.066-3.814-2.167-7.758-6.379-7.761-4.21 0-5.308 3.937-6.369 7.745-.8 2.872-1.559 5.593-3.631 6.514v1.241zm11.492-16.345l.008-.155c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5l.008.152c.455-.099.949-.152 1.487-.152.542 0 1.039.054 1.497.155z" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Profile dropdown -->
+          <div class=" hidden relative ml-3" id="menu-user-container">
+            <div>
+              <button
+                type="button"
+                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                id="user-menu-button"
+                aria-expanded="false"
+                aria-haspopup="true"
+                (click)="toggleMenu = !toggleMenu"
+                >
+                <span class="absolute -inset-1.5"></span>
+                <span class="sr-only">Open user menu</span>
+                <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              </button>
+            </div>
+
+            <!--
+            Dropdown menu, show/hide based on menu state.
+
+            Entering: "transition ease-out duration-100"
+            From: "transform opacity-0 scale-95"
+            To: "transform opacity-100 scale-100"
+            Leaving: "transition ease-in duration-75"
+            From: "transform opacity-100 scale-100"
+            To: "transform opacity-0 scale-95"
+            -->
+            @if (toggleMenu === true) {
+              <div
+
+                id="menu-user"
+                class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="user-menu-button"
+                tabindex="-1"
+                >
+                <!-- Active: "bg-gray-100", Not Active: "" -->
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile1s</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aqui cambiar Mobile menu, show/hide based on menu state. -->
+    @if (toggleMenu2 === true) {
+      <div class="lg:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <!-- Example button actived
+          <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Tienda</a>
+          -->
+          <a
+            routerLink="/tienda"
+            routerLinkActive="bg-gray-900 text-white rounded-md"
             [routerLinkActiveOptions]="{exact: true}"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Tienda
-        </a>
-        <a 
-            routerLink="/categorias" 
-            routerLinkActive="bg-gray-900 text-white rounded-md" 
+          </a>
+          <a
+            routerLink="/categorias"
+            routerLinkActive="bg-gray-900 text-white rounded-md"
             [routerLinkActiveOptions]="{exact: true}"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Categorías
-        </a>
-        <a 
-            routerLink="/motivos" 
-            routerLinkActive="bg-gray-900 text-white rounded-md" 
+          </a>
+          <a
+            routerLink="/motivos"
+            routerLinkActive="bg-gray-900 text-white rounded-md"
             [routerLinkActiveOptions]="{exact: true}"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Motivos
-        </a>
-        <a 
-            routerLink="/hombre" 
-            routerLinkActive="bg-gray-900 text-white rounded-md" 
+          </a>
+          <a
+            routerLink="/hombre"
+            routerLinkActive="bg-gray-900 text-white rounded-md"
             [routerLinkActiveOptions]="{exact: true}"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Hombre
-        </a>
-        <a 
-            routerLink="/mujer" 
-            routerLinkActive="bg-gray-900 text-white rounded-md" 
+          </a>
+          <a
+            routerLink="/mujer"
+            routerLinkActive="bg-gray-900 text-white rounded-md"
             [routerLinkActiveOptions]="{exact: true}"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Mujer
-        </a>
-        <a 
-            routerLink="/nino" 
-            routerLinkActive="bg-gray-900 text-white rounded-md" 
+          </a>
+          <a
+            routerLink="/nino"
+            routerLinkActive="bg-gray-900 text-white rounded-md"
             [routerLinkActiveOptions]="{exact: true}"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Niño
-        </a>
-        <a 
-            routerLink="/recien-nacido" 
-            routerLinkActive="bg-gray-900 text-white rounded-md" 
+          </a>
+          <a
+            routerLink="/recien-nacido"
+            routerLinkActive="bg-gray-900 text-white rounded-md"
             [routerLinkActiveOptions]="{exact: true}"
             class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
             Recién nacido
-        </a>
+          </a>
         </div>
-        </div>
-        }
-    </nav>
+      </div>
+    }
+  </nav>
 </div>
 
 <div
-    class="fixed border-l-4 top-0 right-0 bg-red z-40 w-72 h-screen p-4 overflow-y-auto transition-transform bg-white"
-    [class.translate-x-full]="highSideMenu()"
+  class="fixed border-l-4 top-0 right-0 bg-red z-40 w-72 h-screen p-4 overflow-y-auto transition-transform bg-white"
+  [class.translate-x-full]="highSideMenu()"
   >
   <div class="flex justify-between items-center p-2">
     <p class="text-xl">Carrito</p>
     <button
-    (click)="toggleSideMenu()"
-    >
+      (click)="toggleSideMenu()"
+      >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -244,58 +245,61 @@
         stroke-width="1.5"
         stroke="currentColor"
         class="w-6 h-6"
-      >
+        >
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
           d="M6 18L18 6M6 6l12 12"
-        />
-      </svg>
-    </button>
-    
-  </div>
+          />
+        </svg>
+      </button>
+
+    </div>
     <div>
-        <div *ngFor="let item of cart(); index as i">
-            <div class="flex space-x2 items-center p-2 gap-2">
-                <img class="w-6 h-6" [src]="item.product.image" [alt]="item.product.title" >
-                <h3 class="font-semibold">{{item.product.title}}</h3>
-                <p>${{item.product.price}}</p>
-                    <svg 
-                    class="h-3 w-3" 
-                    fill="true" 
-                    viewBox="0 0 24 24" 
-                    stroke-width="0.75" 
-                    stroke="black" 
-                    aria-hidden="true">
-                        <path 
-                        stroke-linecap="round" 
-                        stroke-linejoin="round" 
-                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" 
-                        />
-                    </svg>
-                <p class="font-semibold">{{item.cant}} </p>
-                <button 
+      @for (item of cart(); track item; let i = $index) {
+        <div>
+          <div class="flex space-x2 items-center p-2 gap-2">
+            <img class="w-6 h-6" [src]="item.product.image" [alt]="item.product.title" >
+            <h3 class="font-semibold">{{item.product.title}}</h3>
+            <p>${{item.product.price}}</p>
+            <svg
+              class="h-3 w-3"
+              fill="true"
+              viewBox="0 0 24 24"
+              stroke-width="0.75"
+              stroke="black"
+              aria-hidden="true">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"
+                />
+              </svg>
+              <p class="font-semibold">{{item.cant}} </p>
+              <button
                 (click)="removeItemCart(i)"
                 >
-                    <svg class="h-5 w-5" fill="true" viewBox="0 0 24 24" stroke-width="0.75" stroke="red" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 1.5c-4.69 0-8.497 3.807-8.497 8.497s3.807 8.498 8.497 8.498 8.498-3.808 8.498-8.498-3.808-8.497-8.498-8.497zm0 7.425 2.717-2.718c.146-.146.339-.219.531-.219.404 0 .75.325.75.75 0 .193-.073.384-.219.531l-2.717 2.717 2.727 2.728c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.384-.073-.53-.219l-2.729-2.728-2.728 2.728c-.146.146-.338.219-.53.219-.401 0-.751-.323-.751-.75 0-.192.073-.384.22-.531l2.728-2.728-2.722-2.722c-.146-.147-.219-.338-.219-.531 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
-                    </svg>
-                </button>
+                <svg class="h-5 w-5" fill="true" viewBox="0 0 24 24" stroke-width="0.75" stroke="red" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 1.5c-4.69 0-8.497 3.807-8.497 8.497s3.807 8.498 8.497 8.498 8.498-3.808 8.498-8.498-3.808-8.497-8.498-8.497zm0 7.425 2.717-2.718c.146-.146.339-.219.531-.219.404 0 .75.325.75.75 0 .193-.073.384-.219.531l-2.717 2.717 2.727 2.728c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.384-.073-.53-.219l-2.729-2.728-2.728 2.728c-.146.146-.338.219-.53.219-.401 0-.751-.323-.751-.75 0-.192.073-.384.22-.531l2.728-2.728-2.722-2.722c-.146-.147-.219-.338-.219-.531 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" />
+                </svg>
+              </button>
             </div>
-        </div>
+          </div>
+        }
         <div class="py-4 text-xl">
-            <hr />
-            Total: ${{total()}}
+          <hr />
+          Total: ${{total()}}
         </div>
-    
+
         <div  class="py-5">
-            
-            <button 
-            *ngIf='cart().length > 0'
-            (click)="clearToCart()" 
-            class="py-2.5 text-white bg-gray-400 hover:bg-gray-600 font-medium rounded text-sm px-5 text-center">
-            Vaciar Carrito
+
+          @if (cart().length > 0) {
+            <button
+              (click)="clearToCart()"
+              class="py-2.5 text-white bg-gray-400 hover:bg-gray-600 font-medium rounded text-sm px-5 text-center">
+              Vaciar Carrito
             </button>
+          }
         </div>
+      </div>
     </div>
-</div>

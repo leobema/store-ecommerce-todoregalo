@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, effect } from '@angular/core';
 import { RouterLinkWithHref } from '@angular/router';
 import { TitleComponent } from '../../shared/sections/home/title/title.component';
@@ -10,7 +10,7 @@ import { PaymentComponent } from '../../info/payment/payment.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLinkWithHref, TitleComponent, FeaturedProductsComponent, BlogArticlesComponent, PaymentComponent],
+  imports: [RouterLinkWithHref, TitleComponent, FeaturedProductsComponent, BlogArticlesComponent, PaymentComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, ParamMap, RouterLinkWithHref } from '@angular/router';
 import { Observable, map } from 'rxjs';
@@ -12,7 +12,7 @@ import { Category } from './../../../shared/models/category.model';
 @Component({
   selector: 'app-list-categories',
   standalone: true,
-  imports: [CommonModule, RouterLinkWithHref],
+  imports: [RouterLinkWithHref],
   templateUrl: './list-categories.component.html',
   styleUrl: './list-categories.component.css'
 })
