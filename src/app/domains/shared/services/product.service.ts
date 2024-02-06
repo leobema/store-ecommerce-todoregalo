@@ -15,7 +15,6 @@ export class ProductService {
       title: 'Prod 1',
       description: 'Esto es la descripcion Prod 1',
       price: 100,
-      image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg',
       creationAt: new Date().toISOString(),
       category_id: 5,
       images: [
@@ -30,7 +29,6 @@ export class ProductService {
       title: 'Prod 2',
       description: 'Esto es la descripcion Prod 2',
       price: 200,
-      image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg',
       creationAt: new Date().toISOString(),
       category_id: 5,
       images: [
@@ -45,7 +43,6 @@ export class ProductService {
       title: 'Prod 3',
       description: 'Esto es la descripcion Prod 3',
       price: 300,
-      image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg',
       creationAt: new Date().toISOString(),
       category_id: 5,
       images: [
@@ -60,7 +57,6 @@ export class ProductService {
       title: 'Prod 4',
       description: 'Esto es la descripcion Prod 4',
       price: 400,
-      image: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
       creationAt: new Date().toISOString(),
       category_id: 5,
       images: [
@@ -69,6 +65,20 @@ export class ProductService {
         'https://undibujo.com/wp-content/uploads/2018/04/stitch-para-imprimir.jpg'
       ],
       cant: 3,  
+    },
+    {
+      id: 5,
+      title: 'Muñeco Milei Chiquito - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
+      price: 2000,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 10,  
     }
   ];
 

@@ -259,7 +259,7 @@
       @for (item of cart(); track item; let i = $index) {
         <div>
           <div class="flex space-x2 items-center p-2 gap-2">
-            <img class="w-6 h-6" [src]="item.product.image" [alt]="item.product.title" >
+            <img class="w-6 h-6" [src]="item.product.images[0]" [alt]="item.product.title" >
             <h3 class="font-semibold">{{item.product.title}}</h3>
             <p>${{item.product.price}}</p>
             <svg
