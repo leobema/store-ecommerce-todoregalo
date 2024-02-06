@@ -25,7 +25,7 @@ export class ListComponent {
   }
   addToCart(product: Product) {
    // console.log('escuchando al hijo')
-    this.cartService.addToCart(product)
+    this.cartService.addToCart(product, 1)
   };
   
 

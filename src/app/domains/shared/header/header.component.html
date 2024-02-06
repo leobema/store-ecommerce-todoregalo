@@ -5,11 +5,11 @@
             <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
             <!-- Mobile menu button-->
             <button 
-            (click)="toggleMenu2 = !toggleMenu2"
-            type="button" 
-            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
-            aria-controls="mobile-menu" 
-            aria-expanded="false"
+                (click)="toggleMenu2 = !toggleMenu2"
+                type="button" 
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
+                aria-controls="mobile-menu" 
+                aria-expanded="false"
             >
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
@@ -255,11 +255,25 @@
     
   </div>
     <div>
-        <div *ngFor="let product of cart(); index as i">
+        <div *ngFor="let item of cart(); index as i">
             <div class="flex space-x2 items-center p-2 gap-2">
-                <img class="w-6 h-6" [src]="product.image" [alt]="product.title" >
-                <h3 class="font-semibold">{{product.title}}</h3>
-                <p>${{product.price}}</p>
+                <img class="w-6 h-6" [src]="item.product.image" [alt]="item.product.title" >
+                <h3 class="font-semibold">{{item.product.title}}</h3>
+                <p>${{item.product.price}}</p>
+                    <svg 
+                    class="h-3 w-3" 
+                    fill="true" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="0.75" 
+                    stroke="black" 
+                    aria-hidden="true">
+                        <path 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z" 
+                        />
+                    </svg>
+                <p class="font-semibold">{{item.cant}} </p>
                 <button 
                 (click)="removeItemCart(i)"
                 >

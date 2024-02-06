@@ -11,27 +11,29 @@ import { CartService } from '../services/cart.service';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  toggleMenu = false
-  toggleMenu2 = false
+  toggleMenu = false;
+  toggleMenu2 = false;
   highSideMenu = signal(true);
-  private cartService = inject(CartService)
-  cart = this.cartService.cart;
-  total = this.cartService.total;
 
+  cart;
+  total;
   
-    toggleSideMenu(){
-      this.highSideMenu.update(prevState => !prevState);
-    };
+  private cartService = inject(CartService);
+  
+  constructor() {
+    this.cart = this.cartService.cart;
+    this.total = this.cartService.total;
+  }
+  
+  toggleSideMenu(){
+    this.highSideMenu.update(prevState => !prevState);
+  };
 
-    clearToCart() {
-      this.cartService.clearCart();
-    };
+  clearToCart() {
+    this.cartService.clearCart();
+  };
 
-    removeItemCart(index: number) {
-      this.cartService.removeItemCart(index)
-    }
-
-    
+  removeItemCart(index: number) {
+    this.cartService.removeItemCart(index)
+  }
 }
-
-

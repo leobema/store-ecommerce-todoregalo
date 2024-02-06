@@ -21,19 +21,30 @@
       </div>
     </div>
     <div class="mt-5 w-full">
-      <h2 class="text-sm title-font text-gray-500 tracking-widest">{{product?.category?.name | uppercase}}</h2>
+      <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ getCategory(product?.category_id)?.name| uppercase}}</h2>
       <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
         {{product?.title}}
       </h1>
       <p class="leading-relaxed">
        {{product?.description}}
       </p>
-      <p class="title-font font-medium text-2xl text-gray-900 mt-5">{{product?.price | currency:'$'}}</p>
-      <button
-      class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-        (click)="addToCart()"
-        >
-        Añadir a carrito
-      </button>
+      <p class="title-font font-medium text-2xl text-gray-900 mt-5">{{product?.price | currency:'$':'symbol':'1.0'}}</p>
+      <div class="mx-auto justify-center">
+        <input
+          #inputCant
+          class="border w-10" 
+          type="number" 
+          value="1" 
+          min="1" 
+          [max]="product?.cant" 
+          (change)="changeHandler(inputCant.value)"
+        />
+        <button
+          class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          (click)="addToCart()"
+          >
+          Añadir a carrito
+        </button>
+      </div>
     </div>
   </div>
