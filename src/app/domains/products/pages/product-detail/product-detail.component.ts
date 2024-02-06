@@ -5,13 +5,12 @@ import { CategoryService } from '../../../shared/services/category.service';
 import { CommonModule } from '@angular/common';
 import { Product } from './../../../shared/models/product.model'
 import { CartService } from '../../../shared/services/cart.service';
-import { ValueSetter } from 'date-fns/parse/_lib/Setter';
-import { state } from '@angular/animations';
+import { ListCategoriesComponent } from '../list-categories/list-categories.component';
 
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [HeaderComponent, CommonModule],
+  imports: [HeaderComponent, CommonModule, ListCategoriesComponent],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
 })
@@ -49,10 +48,6 @@ export class ProductDetailComponent {
       this.cartService.addToCart(this.product, this.cant())
     }
   }
-
-  /* changeHandler(cant: String) {
-    this.cant.update(_ => +cant)
-  } */
 
   changeHandler(cant: String)  {
       this.cant.update(_ => +cant)
