@@ -14,6 +14,10 @@ export class CartService {
     const cart = this.cart();
     return cart.reduce((total, cartItem) => total + (cartItem.product.price * cartItem.cant), 0);
   });
+  cartCount = computed(() =>{
+    const cart = this.cart();
+    return cart.reduce((cartCount, counterItem) => cartCount + (counterItem.cant), 0);
+  });
   injector = inject( Injector);
   
   constructor() {
