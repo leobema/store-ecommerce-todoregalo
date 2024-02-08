@@ -25,8 +25,6 @@ export class CartService {
     if(storage) {
       const cart = JSON.parse(storage)
       this.cart.set(cart)
-      //const total = JSON.parse(storage)
-      //this.total.set(total);
     } 
     this.trackCart();
    }

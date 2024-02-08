@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "productos-lola": {
+      "hosting": {
+        "lolaortega": [
+          "productos-lola"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "productos-lola"
+  }
+}
