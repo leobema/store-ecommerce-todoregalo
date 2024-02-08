@@ -114,15 +114,6 @@
             <input type="text" name="codigoPostal" id="codigoPostal" formControlName="codigoPostal" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
         </div>
-        @for (item of cart(); track item; let i = $index) {
-         <div class="hidden">
-           <input type="text" name="productos" [ngModel]="item.product.title" id="productos" formControlName="productos"> 
-            <input type="number" name="cantidad" [ngModel]="item.product.cant" id="cantidad" formControlName="cantidad">
-        </div>
-      }
-        <div class="hidden">
-            <input type="number" name="total" [ngModel]="total()" id="total" formControlName="total">
-        </div>
       </div>
     </div>
 </div>
@@ -142,7 +133,7 @@
   <div>
     <p>Detalle del Pedido</p>
     <div>
-      @for (item of cart(); track item; let i = $index) {
+      @for (item of cart; track item; let i = $index) {
         <div>
           <div class="flex space-x2 items-center p-2 gap-2">
             <img class="w-12 h-12" [src]="item.product.images[0]" [alt]="item.product.title" >

@@ -68,4 +68,8 @@ export class CartService {
     });
   };
 
+
+  getAll(): Cart[] {
+    return this.cart()
+  };
 }
