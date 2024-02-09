@@ -2,14 +2,28 @@
 
   <div class="flex space-x-4 mt-4 mb-4">
     <app-list-categories />
-    <div class="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      @for (product of productdb; track product) {
-        <app-product
-          [product]="product"
-          (addToCart)="addToCart($event)"
-          />
-      }
+        <div >
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <li class="mx-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" 
+                *ngFor="let product of productdb | paginate: { 
+                  id: 'paginado',
+                  itemsPerPage: itemsPerPage, 
+                  currentPage: p, 
+                  totalItems: totalProductPage,
+              };"> 
+                  <app-product
+                    [product]="product"
+                    (addToCart)="addToCart($event)"
+                    />
+              </li>
+           </ul>
+        </div>
+    
     </div>
-  </div>
+    <div class="flex justify-center w-full">
+      
+    <pagination-controls 
+    class="relative rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 mb-7" (pageChange)="p = $event " id="paginado"></pagination-controls> 
+    </div>
 </section>
 
