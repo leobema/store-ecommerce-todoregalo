@@ -20,6 +20,8 @@ export class InfoEnvioComponent {
   total;
   cartCount;
   
+  isLoading = true;
+  
   private cartService = inject(CartService);
   
   constructor(private router: Router) {
@@ -29,6 +31,7 @@ export class InfoEnvioComponent {
   }
   
 
+  
  /*  form: FormGroup = this.fb.group({
 
   })
@@ -84,9 +87,16 @@ export class InfoEnvioComponent {
 
   volverTienda(){
     this.router.navigate(['/tienda'])
-  }
+  };
 
   private getListCartForEmail() {
     return this.cart.map(item => `${item.product.title} x ${item.cant}`).join("\n");
+  };
+
+  changeLoading(){
+    this.isLoading = (this.isLoading === !this.isLoading)
   }
+
+  
+
 }

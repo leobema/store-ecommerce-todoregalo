@@ -12,65 +12,9 @@ export class ProductService {
   productdb: Product[] = [
     {
       id: 1,
-      title: 'Prod 1',
-      description: 'Esto es la descripcion Prod 1',
-      price: 100,
-      creationAt: new Date().toISOString(),
-      category_id: 5,
-      images: [
-        'https://cdns-images.dzcdn.net/images/artist/03ac3759cf240640d902d9aa5a067632/500x500.jpg',
-        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dd574b8c-3262-41c3-a671-f98ed74e26c7/d4691o5-352c7226-2945-4c62-b7c6-e1f6522ab358.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkNTc0YjhjLTMyNjItNDFjMy1hNjcxLWY5OGVkNzRlMjZjN1wvZDQ2OTFvNS0zNTJjNzIyNi0yOTQ1LTRjNjItYjdjNi1lMWY2NTIyYWIzNTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.w8TqQzOtiV_sewPKL17Tpx5UupGEpeZ68i6QIbmtwJk',
-        'https://undibujo.com/wp-content/uploads/2018/04/stitch-para-imprimir.jpg'
-      ],  
-      cant: 3,
-    },
-    {
-      id: 2,
-      title: 'Prod 2',
-      description: 'Esto es la descripcion Prod 2',
-      price: 200,
-      creationAt: new Date().toISOString(),
-      category_id: 5,
-      images: [
-        'https://m.media-amazon.com/images/I/419mR+BiEiL._SL500_.jpg',
-        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dd574b8c-3262-41c3-a671-f98ed74e26c7/d4691o5-352c7226-2945-4c62-b7c6-e1f6522ab358.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkNTc0YjhjLTMyNjItNDFjMy1hNjcxLWY5OGVkNzRlMjZjN1wvZDQ2OTFvNS0zNTJjNzIyNi0yOTQ1LTRjNjItYjdjNi1lMWY2NTIyYWIzNTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.w8TqQzOtiV_sewPKL17Tpx5UupGEpeZ68i6QIbmtwJk',
-        'https://undibujo.com/wp-content/uploads/2018/04/stitch-para-imprimir.jpg'
-      ],
-      cant: 3,
-    },
-    {
-      id: 3,
-      title: 'Prod 3',
-      description: 'Esto es la descripcion Prod 3',
-      price: 300,
-      creationAt: new Date().toISOString(),
-      category_id: 5,
-      images: [
-        'https://m.media-amazon.com/images/I/41cxUMcT-pL._AC_.jpg',
-        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dd574b8c-3262-41c3-a671-f98ed74e26c7/d4691o5-352c7226-2945-4c62-b7c6-e1f6522ab358.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkNTc0YjhjLTMyNjItNDFjMy1hNjcxLWY5OGVkNzRlMjZjN1wvZDQ2OTFvNS0zNTJjNzIyNi0yOTQ1LTRjNjItYjdjNi1lMWY2NTIyYWIzNTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.w8TqQzOtiV_sewPKL17Tpx5UupGEpeZ68i6QIbmtwJk',
-        'https://undibujo.com/wp-content/uploads/2018/04/stitch-para-imprimir.jpg'
-      ],
-      cant: 3,
-    },
-    {
-      id: 4,
-      title: 'Prod 4',
-      description: 'Esto es la descripcion Prod 4',
-      price: 400,
-      creationAt: new Date().toISOString(),
-      category_id: 5,
-      images: [
-        'https://drimerchocolates.com.ar/upload/images/512x512/corazon-de-chocolate-latidos-12grs--1658876346.jpg',
-        'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dd574b8c-3262-41c3-a671-f98ed74e26c7/d4691o5-352c7226-2945-4c62-b7c6-e1f6522ab358.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkNTc0YjhjLTMyNjItNDFjMy1hNjcxLWY5OGVkNzRlMjZjN1wvZDQ2OTFvNS0zNTJjNzIyNi0yOTQ1LTRjNjItYjdjNi1lMWY2NTIyYWIzNTguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.w8TqQzOtiV_sewPKL17Tpx5UupGEpeZ68i6QIbmtwJk',
-        'https://undibujo.com/wp-content/uploads/2018/04/stitch-para-imprimir.jpg'
-      ],
-      cant: 3,  
-    },
-    {
-      id: 5,
-      title: 'Muñeco Milei Chiquito - Almohada De Apego',
+      title: 'Muñeco Milei Chiquito Presidente - Almohada De Apego',
       description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
-      price: 2000,
+      price: 3900,
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
@@ -78,8 +22,121 @@ export class ProductService {
         '/assets/images/products/Mileis/image-1-compressed.jpg',
         '/assets/images/products/Mileis/image-2-compressed.jpg'
       ],
-      cant: 10,  
-    }
+      cant: 40,  
+    },
+    {
+      id: 2,
+      title: 'Muñeco Milei Chiquito Serio - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+
+    {
+      id: 3,
+      title: 'Muñeco Milei Chiquito Enojado - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+    {
+      id: 4,
+      title: 'Muñeco Milei Chiquito Motosierra - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+    {
+      id: 5,
+      title: 'Muñeco Milei Chiquito Comic Motosierra - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+    {
+      id: 6,
+      title: 'Muñeco Milei Chiquito Comic Motosierra - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+    {
+      id: 7,
+      title: 'Corset Corselet Elástizado En Espalda Regulable',
+      description: 'Descubre la elegancia en nuestro hermoso corset decorativo de Microtull diseñado para usarse bajo el busto. Ideal para ocasiones íntimas o para complementar tu estilo diario, este corset es versátil y combina perfectamente con tu ropa diaria o diferentes conjuntos de lencería. Es importante destacar que NO está diseñado para reducir el abdomen, sino que es exclusivamente decorativo. Viene armado para adaptarse cómodamente al contorno del busto, ofreciendo tallas hasta 120. Consulta nuestra Guía de Tallas para encontrar el ajuste perfecto y añade un toque de sofisticación a tu colección de lencería. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Corset en la comodidad de tu hogar.',
+      price: 12570,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+    {
+      id: 8,
+      title: 'Muñeco Chayanne Chiquito Clasico - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Chayanne, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado en la parte delantera, lo que lo convierte en un artículo único y llamativo.',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+    {
+      id: 9,
+      title: 'Muñeco Chayanne Chiquito Navideño - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Chayanne, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado en la parte delantera, lo que lo convierte en un artículo único y llamativo.',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-0-compressed.jpg',
+        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
   ];
 
   constructor() { }
