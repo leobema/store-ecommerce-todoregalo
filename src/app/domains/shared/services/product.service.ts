@@ -18,8 +18,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-6-compressed.jpg',
+        '/assets/images/products/Mileis/image-7-compressed.jpg',
         '/assets/images/products/Mileis/image-2-compressed.jpg'
       ],
       cant: 40,  
@@ -47,8 +47,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-5-compressed.jpg',
+        '/assets/images/products/Mileis/image-8-compressed.jpg',
         '/assets/images/products/Mileis/image-2-compressed.jpg'
       ],
       cant: 40,  
@@ -61,8 +61,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/image-4-compressed.jpg',
+        '/assets/images/products/Mileis/image-9-compressed.jpg',
         '/assets/images/products/Mileis/image-2-compressed.jpg'
       ],
       cant: 40,  
@@ -83,14 +83,28 @@ export class ProductService {
     },
     {
       id: 6,
+      title: 'Muñeco Milei Chiquito Sonriendo - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
+      price: 3900,
+      creationAt: new Date().toISOString(),
+      category_id: 1,
+      images: [
+        '/assets/images/products/Mileis/image-3-compressed.jpg',
+        '/assets/images/products/Mileis/muñeco-milei-11-compressed.jpg',
+        '/assets/images/products/Mileis/image-2-compressed.jpg'
+      ],
+      cant: 40,  
+    },
+    {
+      id: 101,
       title: 'Muñeco Milei Chiquito Comic Motosierra - Almohada De Apego',
       description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
       price: 3900,
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
+        '/assets/images/products/Mileis/Milei-Motosierra-V2-compressed.jpg',
+        '/assets/images/products/Mileis/muñeco-milei-12-compressed.jpg',
         '/assets/images/products/Mileis/image-2-compressed.jpg'
       ],
       cant: 40,  
@@ -101,11 +115,11 @@ export class ProductService {
       description: 'Descubre la elegancia en nuestro hermoso corset decorativo de Microtull diseñado para usarse bajo el busto. Ideal para ocasiones íntimas o para complementar tu estilo diario, este corset es versátil y combina perfectamente con tu ropa diaria o diferentes conjuntos de lencería. Es importante destacar que NO está diseñado para reducir el abdomen, sino que es exclusivamente decorativo. Viene armado para adaptarse cómodamente al contorno del busto, ofreciendo tallas hasta 120. Consulta nuestra Guía de Tallas para encontrar el ajuste perfecto y añade un toque de sofisticación a tu colección de lencería. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Corset en la comodidad de tu hogar.',
       price: 12570,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 2,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/corset/image-55-compressed.jpg',
+        '/assets/images/products/corset/image-11-compressed.jpg',
+        '/assets/images/products/corset/image-10-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -117,9 +131,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/chayanne/image-0-compressed.jpg',
+        '/assets/images/products/chayanne/image-3-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -131,9 +144,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/chayanne/image-2-compressed.jpg',
       ],
       cant: 40,  
     },
@@ -145,9 +156,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/chayanne/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -157,11 +166,11 @@ export class ProductService {
       description: 'Experimenta la elegancia con nuestro Corpiño en microtull delicado y una Bombacha diseñada con puntilla y detalles cautivadores. IMPORTANTE: Indica el talle de la bombacha (Talle del 1 al 7) a través de mensaje privado. Descubre la perfecta combinación de estilo y comodidad con nuestra lencería de calidad.',
       price: 12370,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-3-compressed.jpg',
+        '/assets/images/products/lenceria/image-4-compressed.jpg',
+        '/assets/images/products/lenceria/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -171,25 +180,25 @@ export class ProductService {
       description: 'Descubre la belleza con nuestro conjunto que incluye un Bralette Corpiño diseñado con puntilla y detalles cautivadores, junto con un encantador Liguero. Además, completa tu look con un hermoso Colaless REGULABLE, todo en el mismo diseño. IMPORTANTE: Especifica el TALLE de la Bombacha (Talle del 1 al 7) por Mensaje Privado. Eleva tu estilo con esta combinación perfecta de elegancia y comodidad.',
       price: 12370,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-0-compressed.jpg',
+        '/assets/images/products/lenceria/image-1-compressed.jpg',
+        '/assets/images/products/lenceria/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
     {
-      id: 13,
+      id: 13, 
       title: 'Bello Conjunto Transparente Nude En Microtull Elástizado',
       description: 'Sumérgete en la belleza con nuestro conjunto que incluye un Bralette Corpiño exquisitamente diseñado en Microtull con detalles cautivadores, acompañado por una hermosa bombacha en el mismo diseño. IMPORTANTE: Indícanos el TALLE de la Bombacha (del 1 al 7) a través de Mensaje Privado. Descubre la combinación perfecta de estilo y confort con este conjunto único.',
       price: 12370,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-6-compressed.jpg',
+        '/assets/images/products/lenceria/image-7-compressed.jpg',
+        '/assets/images/products/lenceria/image-8-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -199,25 +208,25 @@ export class ProductService {
       description: 'Descubre la belleza atemporal de nuestro hermoso corset decorativo diseñado para uso diario, perfecto para llevar bajo el busto. Este delicado accesorio se adapta armoniosamente a tu estilo diario y se combina a la perfección con diversos conjuntos de lencería. Cada pieza está fabricada de forma artesanal, asegurando una calidad excepcional como se muestra en la foto. *No incluye Camiseta. Consulta nuestra Guía de Talles para encontrar la opción perfecta. Este corset viene armado para ajustarse cómodamente al contorno del busto, y lo realizamos hasta el talle XL. Eleva tu estilo con este toque artesanal y elegante.',
       price: 12370,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 2,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/corset/image-4-compressed.jpg',
+        '/assets/images/products/corset/image-5-compressed.jpg',
+        '/assets/images/products/corset/image-6-compressed.jpg'
       ],
       cant: 40,  
     },
     {
       id: 15,
-      title: 'Corset En Cuerina Con Cierre - Accesorio Perfecto',
-      description: 'Descubre la belleza atemporal de nuestro hermoso corset decorativo diseñado para uso diario, perfecto para llevar bajo el busto. Este delicado accesorio se adapta armoniosamente a tu estilo diario y se combina a la perfección con diversos conjuntos de lencería. Cada pieza está fabricada de forma artesanal, asegurando una calidad excepcional como se muestra en la foto. *No incluye Camiseta. Consulta nuestra Guía de Talles para encontrar la opción perfecta. Este corset viene armado para ajustarse cómodamente al contorno del busto, y lo realizamos hasta el talle XL. Eleva tu estilo con este toque artesanal y elegante.',
+      title: 'Muñeco Milei Chiquito Presidente Duende - Almohada De Apego',
+      description: 'Descubre nuestro exclusivo Muñequito de Milei, con un tamaño aproximado de 15 x 26 cm. Este peculiar muñeco es sublimado tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo. Somos LOLAORTEGA COM, tu destino único para moda exclusiva, almohadones, lencería, gorras, tazas y mucho más. Explora nuestra variada selección, arma tu carrito y paga un único envío. Compra con confianza en LOLAORTEGA COM. Encuentra algo especial que refleje tu estilo único. Envíos a todo el país: No importa dónde te encuentres, hacemos envíos a todo el país. Puedes recibir tu Muñequito de Milei en la comodidad de tu hogar. Siempre contamos con stock: Nos esforzamos por satisfacer tus necesidades de inmediato. Si realizas tu pedido, te aseguramos que, si no podemos despachar el mismo día, estaremos enviándolo al día siguiente. ¡Agradecemos tu elección y confianza en nosotros! Si tienes alguna pregunta o solicitud especial, no dudes en contactarnos. ¡Esperamos que disfrutes de tu Muñequito de Milei! ¡Haz tu pedido ahora y añade un toque especial a tu vida!',
       price: 12370,
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/Mileis/Milei-duende-compressed.jpg',
+        '/assets/images/products/corset/image-1-compressed.jpg',
+        '/assets/images/products/corset/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -227,11 +236,10 @@ export class ProductService {
       description: 'Descubre la belleza atemporal de nuestro hermoso corset decorativo diseñado para uso diario, perfecto para llevar bajo el busto. Este delicado accesorio se adapta armoniosamente a tu estilo diario y se combina a la perfección con diversos conjuntos de lencería. Cada pieza está fabricada de forma artesanal, asegurando una calidad excepcional como se muestra en la foto. *No incluye Camiseta. Consulta nuestra Guía de Talles para encontrar la opción perfecta. Este corset viene armado para ajustarse cómodamente al contorno del busto, y lo realizamos hasta el talle XL. Eleva tu estilo con este toque artesanal y elegante.',
       price: 22240,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-9-compressed.jpg',
+        '/assets/images/products/lenceria/image-10-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -241,11 +249,10 @@ export class ProductService {
       description: 'Bello Conjunto Bralette y Colaless diseño en Microtull con detalles para exhibir.',
       price: 22240,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-11-compressed.jpg',
+        '/assets/images/products/lenceria/image-12-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -255,11 +262,9 @@ export class ProductService {
       description: 'Bello Conjunto Bralette y Colaless diseño en Microtull con detalles para exhibir.',
       price: 22240,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-13-compressed.jpg',
       ],
       cant: 40,  
     },
@@ -269,11 +274,11 @@ export class ProductService {
       description: 'Descubre la belleza en nuestro conjunto Bralette diseñado con puntilla, con detalles cautivadores que realzan tu estilo, y complementado con un encantador Colaless a juego. Este conjunto fusiona la elegancia de la puntilla con un diseño cuidadosamente elaborado para exhibir tu belleza de manera sutil y sofisticada. Experimenta la sensualidad y la comodidad en un solo conjunto.',
       price: 12544,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-14-compressed.jpg',
+        '/assets/images/products/lenceria/image-15-compressed.jpg',
+        '/assets/images/products/lenceria/image-16-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -283,11 +288,11 @@ export class ProductService {
       description: 'Descubre la belleza con nuestro Bralette diseñado en puntilla, con detalles cautivadores que resaltan tu estilo. Si prefieres el encanto del blanco o cualquier otro color, no dudes en consultar la disponibilidad. Importante destacar que este Bralette NO INCLUYE PANTIE, pero puedes comunicarte conmigo para añadirlo a través de Mercadolibre y beneficiarte de un solo envío para ambos productos. Eleva tu colección de lencería con esta pieza única y delicada.',
       price: 12544,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-17-compressed.jpg',
+        '/assets/images/products/lenceria/image-18-compressed.jpg',
+        '/assets/images/products/lenceria/image-19-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -297,11 +302,11 @@ export class ProductService {
       description: 'Descubre la exquisitez con nuestro hermoso corset decorativo diseñado para uso diario, perfecto para llevar bajo el busto. Este accesorio versátil puede complementar tu vestimenta diaria y diversos conjuntos de lencería, ofreciendo una opción de moda artesanal única, tal como se ve en la foto. PLUS: Viene con un segundo color reversible para alternar... (*u*) *No incluye Camiseta. Consulta nuestra Guía de Talles para encontrar la opción perfecta. Este corset viene armado para adaptarse cómodamente al contorno del busto, y lo realizamos hasta el talle XL. Añade un toque de sofisticación a tu estilo diario con esta pieza artesanal y reversible.',
       price: 12544,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 2,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/corset/image-0-compressed.jpg',
+        '/assets/images/products/corset/image-1-compressed.jpg',
+        '/assets/images/products/corset/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -313,9 +318,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/imagen-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -327,9 +330,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-2-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -339,11 +341,9 @@ export class ProductService {
       description: 'Lleva la magia contigo con nuestros llaveros plásticos de Harry Potter, disponibles en varios modelos (x5). El precio publicado es por [5] unidades, seleccionadas entre los modelos y cantidades mostrados en la foto. ¡Acompaña tus llaves con la esencia mágica de Harry Potter!',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/imagen-01-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -353,11 +353,11 @@ export class ProductService {
       description: 'Lencería sexy y sensual que despierta la pasión. Explora la sensualidad con nuestro bello Body diseñado en puntilla, con detalles cautivadores que te invitan a exhibir tu lado más seductor.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-20-compressed.jpg',
+        '/assets/images/products/lenceria/image-21-compressed.jpg',
+        '/assets/images/products/lenceria/image-22-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -367,11 +367,11 @@ export class ProductService {
       description: 'Sumérgete en la belleza con nuestro conjunto que incluye un Bralette Corpiño diseñado con puntilla y detalles cautivadores, complementado por un hermoso Colaless REGULABLE en el mismo diseño. Además, completa tu look con un elegante Liguero para un toque adicional de encanto. Si prefieres el encanto del blanco u otro color, no dudes en consultarnos para verificar la disponibilidad. Este conjunto es la elección perfecta para resaltar tu feminidad con estilo y elegancia.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-23-compressed.jpg',
+        '/assets/images/products/lenceria/image-24-compressed.jpg',
+        '/assets/images/products/lenceria/image-25-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -383,9 +383,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/imagen-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -395,11 +393,9 @@ export class ProductService {
       description: '¡Lleva a casa una taza personalizada del político del momento! Descubre nuestros modelos para que elijas tu favorito.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 5,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/taza/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -409,11 +405,11 @@ export class ProductService {
       description: 'Embárcate en la elegancia con nuestro bello conjunto que incluye un Bralette Corpiño diseñado en puntilla con detalles cautivadores, complementado por un encantador liguero para un toque de seducción adicional. Además, completa tu conjunto con un hermoso colaless REGULABLE en el mismo diseño. Esta exquisita combinación resalta tu feminidad con estilo y sofisticación. Vive la experiencia de la sensualidad y la moda con este conjunto irresistible.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-26-compressed.jpg',
+        '/assets/images/products/lenceria/image-27-compressed.jpg',
+        '/assets/images/products/lenceria/image-28-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -425,9 +421,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-29-compressed.jpg',
+        '/assets/images/products/munecos/image-30-compressed.jpg',
+        '/assets/images/products/munecos/image-31-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -437,11 +433,9 @@ export class ProductService {
       description: 'Descubre la sensualidad con nuestro corpiño en diseño exclusivo, solo en bretel y sin relleno, con detalles cautivadores para exhibir (ver fotos). Complementa tu estilo con nuestra bombacha en diseño único, también en bretel elástizado... IMPORTANTE: Envía por mensaje privado el talle de la bombacha (del 1 al 7). Vive la experiencia de la moda y la comodidad con esta exquisita combinación.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-32-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -453,9 +447,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-8-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -465,11 +457,11 @@ export class ProductService {
       description: 'Experimenta la sensualidad con nuestro conjunto de corte tipo corset, elaborado en microtull. Destaca por su detalle frontal de falsa ballena, diseñado de manera decorativa para añadir un toque único y atractivo. Este conjunto fusiona el encanto clásico con la modernidad del microtull, ofreciéndote una experiencia de lencería que combina estilo y comodidad. Descubre la elegancia y la sofisticación con cada detalle.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 2,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-33-compressed.jpg',
+        '/assets/images/products/lenceria/image-35-compressed.jpg',
+        '/assets/images/products/lenceria/image-34-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -481,9 +473,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-9-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -493,11 +483,9 @@ export class ProductService {
       description: 'Luce el orgullo mundialista con nuestro llavero de la Copa del Mundo. Medida: 5 cm Material: Plástico de alta calidad Ideal como souvenir, regalo o recuerdo. Entrega inmediata, si figura en stock es porque lo tenemos disponible.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-10-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -509,9 +497,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-0-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg',
+        '/assets/images/products/almohadas/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -523,9 +511,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-0-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg',
+        '/assets/images/products/almohadas/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -535,11 +523,10 @@ export class ProductService {
       description: 'Sumérgete en la sensualidad con nuestro body en bella lencería de puntilla. Este exquisito diseño realza tu feminidad con elegancia y estilo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-36-compressed.jpg',
+        '/assets/images/products/lenceria/image-37-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -551,9 +538,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-3-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -565,9 +550,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-10-compressed.jpg',
+        '/assets/images/products/almohadas/image-11-compressed.jpg',
+        '/assets/images/products/almohadas/image-12-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -577,11 +562,11 @@ export class ProductService {
       description: '+ Corpiño En bella lencería + Bombacha con diseño en puntilla con detalles para exhibir. IMPORTANTE: Especificar por mensaje privado el talle de la bombacha (Talle del 1 al 7)',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-38-compressed.jpg',
+        '/assets/images/products/lenceria/image-39-compressed.jpg',
+        '/assets/images/products/lenceria/image-40-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -593,9 +578,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-4-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -607,9 +590,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-3-compressed.jpg',
+        '/assets/images/products/almohadas/image-2-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -621,9 +604,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-0-compressed.jpg',
+        '/assets/images/products/almohadas/image-2-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -635,9 +618,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-0-compressed.jpg',
+        '/assets/images/products/almohadas/image-2-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -647,11 +630,11 @@ export class ProductService {
       description: 'Pequeña Estatua Realizada en Plástico Biodegradable, Ideal para tu escritorio, mostrador o cualquier lugar que consideres conveniente. Dimensiones: 12 cm x 7 cm x 7 cm. Peso: Aproximadamente 70 gramos. El precio publicado es por [1] unidad.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-11-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-2-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-3-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -661,11 +644,11 @@ export class ProductService {
       description: '¡Descubre la Elegancia y Motivación con Nuestras Fundas de Almohadones de 40x40! **Arma tu colección con las mejores frases para tu ambiente para tu espacio** Transforma tus espacios con nuestras fundas de almohadones diseñadas para agregar estilo y motivación a tu hogar. Con frases motivacionales, estas fundas son ideales para decorar tu sofá y camas, proporcionando un toque inspirador a cada rincón.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 8,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-0-compressed.jpg',
+        '/assets/images/products/almohadas/image-2-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -675,11 +658,10 @@ export class ProductService {
       description: 'Conjunto Pijama - Diseñado para un excelente calce y confección. Material: Morley con detalles en puntilla.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 6,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-dama/image-0-compressed.jpg',
+        '/assets/images/products/ropa-dama/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -691,9 +673,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-4-compressed.jpg',
+        '/assets/images/products/almohadas/image-15-compressed.jpg',
+        '/assets/images/products/almohadas/image-14-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -703,11 +685,9 @@ export class ProductService {
       description: 'Tipo de Producto: Figura articulada en forma de hoja de marihuana. Proceso de Fabricación: Impresión en 3D, lo que garantiza detalles precisos y diseño personalizado.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-4-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -717,11 +697,9 @@ export class ProductService {
       description: 'Características: -Altura 5 cm aprox ; 4cm Diametro -Llavero en impresión 3D. -Material: PLA, En color Negro con detalle en pintura Plateada Metalizada',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -731,11 +709,9 @@ export class ProductService {
       description: 'Este organizador porta holder para destornilladores es fabricado mediante impresión 3D con la máxima calidad del mercado, utilizando PLA. Ofrece una capacidad máxima para sostener hasta 9 destornilladores. Este práctico accesorio te ayuda a mantener tus herramientas ordenadas y al alcance de la mano, facilitando tu trabajo y optimizando el espacio. Con este organizador, tendrás una solución eficiente y estéticamente agradable para almacenar tus destornilladores en la pared.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-6-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -745,11 +721,11 @@ export class ProductService {
       description: '¡Sumérgete en el mundo mágico de Mario Bros con nuestras exclusivas gorras diseñadas para los verdaderos fanáticos de los videojuegos! Presentamos una colección única que fusiona la nostalgia de Mario Bros con un toque moderno de moda urbana. Aquí está lo que hace que nuestras gorras destaquen:',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 9,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/gorra/image-0-compressed.jpg',
+        '/assets/images/products/gorra/image-1-compressed.jpg',
+        '/assets/images/products/gorra/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -759,11 +735,10 @@ export class ProductService {
       description: '+ Corpiño En bello algodón y detalles en puntilla, No viene el corpiño con taza, es la misma tela de algodón. + Bombacha con diseño en puntilla con detalles para exhibir.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-41-compressed.jpg',
+        '/assets/images/products/lenceria/image-42-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -775,9 +750,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -787,11 +760,10 @@ export class ProductService {
       description: 'Experimenta la elegancia con nuestro hermoso Top y Bombacha tipo Pantie, elaborados en charol de alta calidad. Esta sofisticada combinación es perfecta para complementar tu ropa diaria y diversos conjuntos de lencería, brindándote versatilidad y estilo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 6,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-dama/image-2-compressed.jpg',
+        '/assets/images/products/ropa-dama/image-3-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -803,9 +775,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-6-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -817,9 +787,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/image-7-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -829,11 +797,11 @@ export class ProductService {
       description: 'Características: -Altura 2,5 cm aprox ; 3cm Diametro. -Llavero en impresión 3D. -Material: PLA, En color Negro con detalle en pintura Plateada Metalizada',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-9-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-7-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-8-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -843,11 +811,11 @@ export class ProductService {
       description: 'LÁMPARA DE PLÁSTICO IMPRESION 3D - AFA ARGENTINA CAMPEÓN DEL MUNDO - VELADOR LED RGB. Embellece tu espacio con nuestro velador decorativo de la AFA (Selección Argentina) en elegantes colores negro y amarillo. Este velador cuenta con luces LED RGB (multicolor) controladas por un control remoto, brindando una iluminación única y ajustable a tu hogar u oficina. Detalle grabado con lo 3 años que ha sido campeón.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-14-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-13-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-12-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -859,9 +827,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-13-compressed.jpg',
+        '/assets/images/products/almohadas/image-8-compressed.jpg',
+        '/assets/images/products/almohadas/image-9-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -873,9 +841,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-7-compressed.jpg',
+        '/assets/images/products/almohadas/image-5-compressed.jpg',
+        '/assets/images/products/almohadas/image-6-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -885,11 +853,9 @@ export class ProductService {
       description: 'Lleva contigo el personaje más icónico de league of legends, disponibles en varios modelos (próximamente) (x5).',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-15-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -899,11 +865,11 @@ export class ProductService {
       description: 'Muñeco impreso en 3D de Javier Milei y Versión Caballero Agarrador de la Pala! Dale miedo a la Casta con esta figura de Javi empuñando la pala trabajando por el País!',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-16-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-17-compressed.jpg',
+        '/assets/images/products/impresion-3d/image-18-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -913,11 +879,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-4-compressed.jpg',
+        '/assets/images/products/ropa-hombre/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -927,11 +892,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-6-compressed.jpg',
+        '/assets/images/products/ropa-hombre/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -941,11 +905,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-7-compressed.jpg',
+        '/assets/images/products/ropa-hombre/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -955,11 +918,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-8-compressed.jpg',
+        '/assets/images/products/ropa-hombre/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -969,25 +931,23 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-9-compressed.jpg',
+        '/assets/images/products/ropa-hombre/image-5-compressed.jpg'
       ],
       cant: 40,  
     },
     {
       id: 70,
-      title: 'Remera Unisex: Estilo 3d Para Verdaderos Gamers',
+      title: 'Remera Unisex: Estilo Dragon Ball Universe',
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-10-compressed.jpg',
+        '/assets/images/products/ropa-hombre/image-11-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -997,11 +957,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-12.jpg',
+        '/assets/images/products/ropa-hombre/image-11-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -1011,11 +970,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-13.jpg',
+        '/assets/images/products/ropa-hombre/image-11-compressed.jpg'
       ],
       cant: 73,  
     },
@@ -1025,11 +983,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-14.jpg',
+        '/assets/images/products/ropa-hombre/image-11-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -1039,11 +996,10 @@ export class ProductService {
       description: 'Descubre la Excelencia en Moda con Nuestras Remeras: En el corazón de nuestra colección de moda se encuentran nuestras remeras diseñadas para ofrecerte una experiencia de uso excepcional.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-15.jpg',
+        '/assets/images/products/ropa-hombre/image-11-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -1055,9 +1011,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-16.jpg'
       ],
       cant: 40,  
     },
@@ -1069,9 +1023,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-17.jpg'
       ],
       cant: 40,  
     },
@@ -1083,9 +1035,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-18.jpg'
       ],
       cant: 40,  
     },
@@ -1097,9 +1047,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-19.jpg'
       ],
       cant: 40,  
     },
@@ -1111,9 +1059,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/imagen-10.jpg'
       ],
       cant: 40,  
     },
@@ -1125,9 +1071,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-20.jpg',
       ],
       cant: 40,  
     },
@@ -1139,9 +1083,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-21.jpg'
       ],
       cant: 40,  
     },
@@ -1153,9 +1095,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-22.jpg'
       ],
       cant: 40,  
     },
@@ -1165,11 +1105,10 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-10.jpg',
+        '/assets/images/products/impresion-3d/image-11.jpg'
       ],
       cant: 40,  
     },
@@ -1179,11 +1118,10 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-12.jpg',
+        '/assets/images/products/impresion-3d/image-13.jpg'
       ],
       cant: 40,  
     },
@@ -1193,11 +1131,11 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-44.jpg',
+        '/assets/images/products/lenceria/image-43.jpg',
+        '/assets/images/products/lenceria/image-45.jpg'
       ],
       cant: 40,  
     },
@@ -1207,11 +1145,11 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 3,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/lenceria/image-48.jpg',
+        '/assets/images/products/lenceria/image-46.jpg',
+        '/assets/images/products/lenceria/image-47.jpg'
       ],
       cant: 40,  
     },
@@ -1221,11 +1159,10 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-14.jpg',
+        '/assets/images/products/impresion-3d/image-15.jpg'
       ],
       cant: 40,  
     },
@@ -1235,11 +1172,11 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 4,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/impresion-3d/image-16.jpg',
+        '/assets/images/products/impresion-3d/image-17.jpg',
+        '/assets/images/products/impresion-3d/image-18.jpg'
       ],
       cant: 40,  
     },
@@ -1249,11 +1186,11 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 9,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/gorra/image-1.jpg',
+        '/assets/images/products/gorra/image-2.jpg',
+        '/assets/images/products/gorra/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -1263,11 +1200,11 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 9,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/gorra/image-3.jpg',
+        '/assets/images/products/gorra/image-4.jpg',
+        '/assets/images/products/gorra/image-2-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -1279,9 +1216,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-23.jpg'
       ],
       cant: 40,  
     },
@@ -1291,11 +1226,9 @@ export class ProductService {
       description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 8,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-23.jpg'
       ],
       cant: 40,  
     },
@@ -1307,9 +1240,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-24.jpg'
       ],
       cant: 40,  
     },
@@ -1321,9 +1252,9 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-0-compressed.jpg',
+        '/assets/images/products/almohadas/image-2-compressed.jpg',
+        '/assets/images/products/almohadas/image-1-compressed.jpg'
       ],
       cant: 40,  
     },
@@ -1335,9 +1266,7 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/imagen-11.jpg'
       ],
       cant: 40,  
     },
@@ -1349,9 +1278,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-25.jpg',
+        '/assets/images/products/almohadas/image-26.jpg'
       ],
       cant: 40,  
     },
@@ -1363,9 +1291,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-27.jpg',
+        '/assets/images/products/almohadas/image-28.jpg'
       ],
       cant: 40,  
     },
@@ -1377,9 +1304,8 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/almohadas/image-29.jpg',
+        '/assets/images/products/almohadas/image-30.jpg',
       ],
       cant: 40,  
     },
@@ -1391,23 +1317,21 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/imagen-12.jpg'
       ],
       cant: 40,  
     },
     {
       id: 99,
       title: 'Almohadon De 40cm Puchito De Marihuana - Diseño Decorativo',
-      description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
+      description: 'Descubre nuestro exclusivo almohadón con el divertido diseño "Puchito de Marihuana". Con dimensiones de 40x15 cm, este almohadón es la elección perfecta para potenciar el estilo y la personalidad en tu espacio.',
       price: 3900,
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/imagen-13.jpg',
+        '/assets/images/products/munecos/imagen-14.jpg',
+        '/assets/images/products/munecos/imagen-15.jpg'
       ],
       cant: 40,  
     },
@@ -1419,23 +1343,20 @@ export class ProductService {
       creationAt: new Date().toISOString(),
       category_id: 1,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/munecos/imagen-16.jpg'
       ],
       cant: 40,  
     },
     {
-      id: 101,
-      title: 'Almohadón Decorativo Forma Pene - Divertido Ideal 29x21 Cm',
-      description: 'Descubre nuestro exclusivo Almohada del Estudiantes, con un tamaño aproximado de 15 x 26 cm. Esta peculiar almohada es sublimada tanto en la parte delantera como en la trasera, lo que lo convierte en un artículo único y llamativo.',
+      id: 102,
+      title: 'Remera de Dragon Ball',
+      description: 'Variedad de Talles y Colores: Diseñadas para todos, ofrecemos una amplia gama de talles y una paleta de colores diversa, asegurando que cada persona encuentre la combinación perfecta para su estilo. ¡Son prendas unisex, ideales para hombres y mujeres por igual!',
       price: 3900,
       creationAt: new Date().toISOString(),
-      category_id: 1,
+      category_id: 7,
       images: [
-        '/assets/images/products/Mileis/image-0-compressed.jpg',
-        '/assets/images/products/Mileis/image-1-compressed.jpg',
-        '/assets/images/products/Mileis/image-2-compressed.jpg'
+        '/assets/images/products/ropa-hombre/image-16.jpg',
+        '/assets/images/products/ropa-hombre/image-11-compressed.jpg'
       ],
       cant: 40,  
     },
