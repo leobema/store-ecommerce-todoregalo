@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, NgModule, inject } from '@angular/core';
-import { FormControl, ReactiveFormsModule, FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { Component, inject } from '@angular/core';
+import { FormControl, ReactiveFormsModule, FormGroup, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { CartService } from '../services/cart.service';
 import { Router, RouterLinkWithHref } from '@angular/router';
@@ -19,7 +19,6 @@ export class InfoEnvioComponent {
   cart;
   total;
   cartCount;
-  
   isLoading = true;
   
   private cartService = inject(CartService);

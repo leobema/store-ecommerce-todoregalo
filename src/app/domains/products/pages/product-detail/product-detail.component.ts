@@ -1,16 +1,27 @@
-import { Component, Input, inject, signal, effect } from '@angular/core';
+import { Component, Input, inject, signal } from '@angular/core';
 import { HeaderComponent } from '../../../shared/header/header.component';
 import { ProductService } from '../../../shared/services/product.service';
 import { CategoryService } from '../../../shared/services/category.service';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgSwitch } from '@angular/common';
 import { Product } from './../../../shared/models/product.model'
 import { CartService } from '../../../shared/services/cart.service';
 import { ListCategoriesComponent } from '../list-categories/list-categories.component';
+import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
+import moment from 'moment';
+moment.locale('es');
+
+export interface ShipmentType {
+  code: string
+  title: string
+  averageDateRange: string[]
+  priceWithOutDiscount: number
+  priceWithDiscount: number
+}
 
 @Component({
   selector: 'app-product-detail',
   standalone: true,
-  imports: [HeaderComponent, CommonModule, ListCategoriesComponent],
+  imports: [HeaderComponent, CommonModule, ListCategoriesComponent, FormsModule],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css'
 })
@@ -23,8 +34,40 @@ export class ProductDetailComponent {
   private cartService = inject(CartService)
   cant = signal<number>(1);
 
-  constructor() {
-   
+  public shipmentTypes: ShipmentType[];
+
+  classicShippingPrice = 4500;
+  expressShippingPrice = 6800;
+
+  shipmentTypesValue = 0;
+
+  constructor(){
+    this.shipmentTypes = [
+      {
+        code: 'classic',
+        title: 'Envío Clasico',
+        averageDateRange: [
+          moment().add(7, 'days').format('D'),
+          moment().add(12, 'days').format('DMMM'),
+        ],
+        priceWithOutDiscount: this.classicShippingPrice * 1.5,
+        priceWithDiscount: this.classicShippingPrice,
+      },
+      {
+        code: 'express',
+        title: 'Envío Express',
+        averageDateRange: [
+          moment().add(3, 'days').format('D'),
+          moment().add(6, 'days').format('DMMM'),
+        ],
+        priceWithOutDiscount: this.expressShippingPrice * 1.5,
+        priceWithDiscount: this.expressShippingPrice,
+      }
+    ]
+  }
+
+  public get shipmentSelected() {
+    return this.shipmentTypes[this.shipmentTypesValue];
   }
 
   ngOnInit() {
@@ -37,7 +80,11 @@ export class ProductDetailComponent {
     }
   }
 
-  
+
+  controlEnvio = new FormGroup({
+    selectEnvio: new FormControl('')
+
+  })
 
   changeCover(newImg: string) {
     this.cover.set(newImg);
@@ -66,6 +113,3 @@ export class ProductDetailComponent {
     return this.categoryService.get(id)
   } 
 }
-
-
-

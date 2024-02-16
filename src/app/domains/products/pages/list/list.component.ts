@@ -26,7 +26,7 @@ export class ListComponent {
   categorydb: Category[] = [];
   private categoryService = inject(CategoryService);
   p: number = 1;
-  itemsPerPage: number = 16;
+  itemsPerPage: number = 12;
   totalProductPage:any;
   //collection: any[] = someArrayOfThings;
 

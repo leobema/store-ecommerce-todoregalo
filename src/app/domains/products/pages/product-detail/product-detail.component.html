@@ -30,19 +30,44 @@
               <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
                 {{product?.title}}
               </h1>
-              <div class="border rounded">
-              <h3 class="font-bold text-base">
-                Envíos Nacionales
-              </h3>
               
-              <p class="font-semibold text-base"><span class="font-semibold text-base">Envío Clásico: </span>Llega entre el jueves 8 y el jueves 15/feb por <br />
-              $4.500,00 <span class="line-through text-opacity-70 text-gray-500">$6.579,99$</span> <br />
-              </p>
-              </div>
-            <p class="font-semibold text-base"><span class="font-semibold text-base">Urgente: </span>Llega entre el jueves 8 y el jueves 15/feb por <br />
-            $6.800,00 <span class="line-through text-opacity-70 text-gray-500">$9.290,99$</span> <br />
-          </p>
-          <hr />
+              
+                <form class="border rounded">
+                  <h3 class="font-bold text-base">
+                    Envíos Nacionales
+                  </h3>
+                  <div class="sm:col-span-4">
+                   
+                    <div class="mt-2">
+
+                      <select
+                        name="shipmentTypesValue"
+                        autocomplete="Envío Clasico"
+                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                        [(ngModel)]="shipmentTypesValue"
+                      >
+                        @for (type of shipmentTypes; track type.code) {
+                          <option [ngValue]="$index">
+                            {{ type.title }}
+                          </option>
+                        }
+                      </select>
+                      
+
+                        <label  class="block text-sm leading-6 text-gray-900">
+                          Llega entre el 
+                          {{ shipmentSelected.averageDateRange[0] }} 
+                          y el {{ shipmentSelected.averageDateRange[1] }} por 
+                          <span class="text-lg">${{shipmentSelected.priceWithDiscount}} </span>
+                          <br />
+                          <span class="line-through text-opacity-70 text-gray-500">${{shipmentSelected.priceWithOutDiscount}}</span> 
+                          <br />
+                        </label>
+                    </div>
+                  </div>
+                </form>
+             
+              <br/>
           <p>
             Beneficio Mercado Puntos
           </p>
@@ -78,8 +103,9 @@
           </div>
         </div>
       </div>
-        <p  [innerHTML]="product?.description"
+        <p
             class="leading-relaxed mt-5">
+            {{product?.description}}
         </p>
     </div>
 </div>
