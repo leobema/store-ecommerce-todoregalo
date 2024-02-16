@@ -8,15 +8,10 @@ import { CartService } from '../../../shared/services/cart.service';
 import { ListCategoriesComponent } from '../list-categories/list-categories.component';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule, FormsModule } from '@angular/forms';
 import moment from 'moment';
+import { ShipmentType } from '../../../shared/models/shipment.model';
+
 moment.locale('es');
 
-export interface ShipmentType {
-  code: string
-  title: string
-  averageDateRange: string[]
-  priceWithOutDiscount: number
-  priceWithDiscount: number
-}
 
 @Component({
   selector: 'app-product-detail',
@@ -26,6 +21,7 @@ export interface ShipmentType {
   styleUrl: './product-detail.component.css'
 })
 export class ProductDetailComponent {
+  ShipmentType: ShipmentType | undefined;
   product : Product | undefined;
   cover = signal('');
   @Input() id?: number; 
@@ -33,13 +29,13 @@ export class ProductDetailComponent {
   private categoryService = inject(CategoryService);
   private cartService = inject(CartService)
   cant = signal<number>(1);
-
+  
   public shipmentTypes: ShipmentType[];
 
   classicShippingPrice = 4500;
   expressShippingPrice = 6800;
-
-  shipmentTypesValue = 0;
+  
+shipmentTypesValue = 0;
 
   constructor(){
     this.shipmentTypes = [
@@ -64,11 +60,11 @@ export class ProductDetailComponent {
         priceWithDiscount: this.expressShippingPrice,
       }
     ]
-  }
+}
 
-  public get shipmentSelected() {
+   public get shipmentSelected() {
     return this.shipmentTypes[this.shipmentTypesValue];
-  }
+  } 
 
   ngOnInit() {
     if (this.id) {
