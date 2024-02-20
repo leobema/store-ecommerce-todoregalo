@@ -1,1 +1,19 @@
-<p>mujer</p>
+<section class="mt-10 flex items-center flex-col p-2 lg:p-5 xl:pl-60 xl:pr-60 w-full">
+    <div class="">
+      <h3 class="uppercase text-3xl font-bold text-center mb-2 lg:text-left">Productos Destacados</h3>
+      <div class="flex space-x-4 mt-4 mb-4">
+            <div >
+              <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <li class="mx-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" 
+                    *ngFor="let product of productdb"> 
+                      <app-product
+                        [product]="product"
+                        (addToCart)="addToCart($event)"
+                        />
+                  </li>
+               </ul>
+            </div>
+        
+        </div> 
+    </div>
+  </section>

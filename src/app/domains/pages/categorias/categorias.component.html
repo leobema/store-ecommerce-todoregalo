@@ -1,3 +1,13 @@
-<div class="mx-auto">
-<h1 class="text-center p-50 py-50">Categoria</h1>
+<div class="mb-10">
+    <div class="mx-auto mt-10 grid justify-items-center grid-cols-1 md:grid-cols-2 md:mx-auto xl:grid-cols-4 p-3 xl:pl-60 xl:pr-60 w-full gap-10">
+      @for (category of categorydb; track category) {
+        <div>
+            
+            <a routerLink="/tienda" [queryParams]="{category_id: category.id}">
+                <img class="w-[400px] rounded-lg " src="{{category.image}}" alt="{{category.name}}">
+                <h2 class="md:text-3xl text-2xl xl:text-xl text-center mt-2 font-semibold">{{category.name}}</h2>
+            </a>
+        </div>
+      }
+    </div>
 </div>

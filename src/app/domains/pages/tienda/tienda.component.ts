@@ -18,8 +18,8 @@ import { CommonModule } from '@angular/common';
 })
 export class TiendaComponent {
   private productService: ProductService = inject(ProductService);
-  private categoryService: CategoryService = inject(CategoryService);
-  private cartService: CartService = inject(CartService);
+  //private categoryService: CategoryService = inject(CategoryService);
+  //private cartService: CartService = inject(CartService);
   products: Product[] = [];
   //totalProducts = totalProducts
 

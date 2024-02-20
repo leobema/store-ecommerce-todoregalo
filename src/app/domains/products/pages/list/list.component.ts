@@ -44,10 +44,10 @@ export class ListComponent {
     this.category_id$.subscribe(category_id => {
       if (category_id === null) {
         this.productdb = this.productService.getAllProducts();
-         this.totalProductPage = this.productdb.length;
       } else {
         this.productdb = this.productService.getProductByCategory(+category_id);
       }
+      this.totalProductPage = this.productdb.length;
     });
   }
 

@@ -32,8 +32,8 @@ export class ProductDetailComponent {
   
   public shipmentTypes: ShipmentType[];
 
-  classicShippingPrice = 4500;
-  expressShippingPrice = 6800;
+  classicShippingPrice = 5490;
+  expressShippingPrice = 11300;
   
 shipmentTypesValue = 0;
 
@@ -61,6 +61,7 @@ shipmentTypesValue = 0;
       }
     ]
 }
+
 
    public get shipmentSelected() {
     return this.shipmentTypes[this.shipmentTypesValue];

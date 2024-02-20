@@ -1,9 +1,9 @@
-<section class="p-10 mx-40">
+<div class="lg:mt-10 flex items-center flex-col p-2 lg:p-5 xl:pl-60 xl:pr-60 w-full pl-2 pr-2">
 
-  <div class="flex space-x-4 mt-4 mb-4">
-    <app-list-categories />
-        <div >
-          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+  <div class="lg:flex lg:space-x-4 mt-4 mb-4">
+    <app-list-categories class="lg:mx-6 lg:text-left text-center text-xl" />
+        <div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             <li class="mx-auto grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" 
                 *ngFor="let product of productdb | paginate: { 
                   id: 'paginado',
@@ -27,5 +27,5 @@
     nextLabel="Sig"
     class="relative rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 mb-7" (pageChange)="p = $event " id="paginado"></pagination-controls> 
     </div>
-</section>
+  </div>
 

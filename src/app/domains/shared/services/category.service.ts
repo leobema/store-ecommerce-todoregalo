@@ -10,43 +10,43 @@ export class CategoryService {
   categorydb: Category[] = [
     {
       id: 1,
-      name: 'Almohadas',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      name: 'Almohadones',
+      image: './../../../../assets/images/categorias/categoria-almohadas-01.jpg'
     },
     {
       id: 2,
       name: 'Corset',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      image: './../../../../assets/images/categorias/categoria-corset-01.jpg'
     },
     {
       id: 3,
       name: 'Lenceria',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      image: './../../../../assets/images/categorias/categoria-lenceria-01.jpg'
     },
     {
       id: 4,
       name: 'Impresion 3D',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      image: './../../../../assets/images/categorias/categoria-impresion-3D-01.jpg'
     },
     {
       id: 5,
-      name: 'Tazas',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      name: 'Tazas Sublimadas',
+      image: './../../../../assets/images/categorias/categoria-tazas-sublimadas-01.jpg'
     },
     {
       id: 6,
-      name: 'Ropa Dama',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      name: 'Ropa para Dama',
+      image: './../../../../assets/images/categorias/categoria-ropa-dama-01.jpg'
     },
     {
       id: 7,
-      name: 'Ropa Hombre',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      name: 'Ropa para Hombre',
+      image: './../../../../assets/images/categorias/categoria-ropa-hombre-01.jpg'
     },
     {
       id: 8,
-      name: 'Fundas',
-      image: 'https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg'
+      name: 'Fundas de Almohadas',
+      image: './../../../../assets/images/categorias/categoria-fundas-01.jpg'
     }
   ]
   private productService: ProductService = inject(ProductService);
